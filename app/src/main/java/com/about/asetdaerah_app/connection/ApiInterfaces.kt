@@ -14,4 +14,11 @@ interface ApiInterfaces {
         @Field("password") password:String): Call<ResponLogin>
 
 
+    @FormUrlEncoded
+    @POST("register.php")
+    fun registerPegawai(
+        @Field("nip") nip:String,
+        @Field("nama") nama:String,
+        @Field("password") password:String,
+        @Field("notelp") notelp:String,): Call<ResponLogin>
 }

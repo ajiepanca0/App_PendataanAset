@@ -10,7 +10,6 @@ import com.about.asetdaerah_app.Helper.PreferencesHelper
 import com.about.asetdaerah_app.connection.ApiConfig
 import com.about.asetdaerah_app.connection.Respon.ResponLogin
 import com.about.asetdaerah_app.databinding.ActivityLoginBinding
-import com.about.asetdaerah_app.databinding.ActivityMainBinding
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -22,7 +21,6 @@ class LoginActivity : AppCompatActivity() {
     private val api by lazy { ApiConfig().endPoint }
 
     var sukses : String = "sukses"
-
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -66,10 +64,10 @@ class LoginActivity : AppCompatActivity() {
                 val data =response.body()
                 if (response.isSuccessful){
                     if (data !=null){
-                        if (data.status.equals(sukses)){
+                        if (data.status == sukses){
                             showloading(false)
                             Toast.makeText(applicationContext, data.status, Toast.LENGTH_SHORT).show()
-                            SaveSession(binding.etLoginNip.text.toString())
+                            saveSession(binding.etLoginNip.text.toString())
                             startActivity(Intent(this@LoginActivity, MainActivity::class.java))
                             finish()
                         }else{
@@ -106,7 +104,7 @@ class LoginActivity : AppCompatActivity() {
         finish()
     }
 
-    private fun SaveSession(nip: String) {
+    private fun saveSession(nip: String) {
 
         sharedpref.put(Constant.PREF_NIP,nip )
         sharedpref.put(Constant.PREF_IS_LOGIN, true)

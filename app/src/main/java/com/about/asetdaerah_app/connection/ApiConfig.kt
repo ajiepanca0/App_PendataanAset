@@ -19,7 +19,7 @@ class ApiConfig {
 
 
             val retrofit = Retrofit.Builder()
-                .baseUrl("http://IP-Belum/folder/")
+                .baseUrl("http://192.168.43.161:8080/Project_Aset/")
                 .client(client)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
