@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddBuildingAsset">
+
+    <EditText
+        android:id="@+id/et_buildingname"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="34dp"
+        android:background="@drawable/custom_input"
+        android:fontFamily="@font/poppins"
+        android:hint="@string/buildingname"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_buildingcondition"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="34dp"
+        android:autofillHints=""
+        android:background="@drawable/custom_input"
+        android:fontFamily="@font/poppins"
+        android:hint="@string/buildingcondition"
+        android:inputType="text"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_buildingname" />
+
+    <EditText
+        android:id="@+id/et_buildingtype"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="34dp"
+        android:background="@drawable/custom_input"
+        android:fontFamily="@font/poppins"
+        android:hint="@string/buildingtype"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_buildingcondition" />
+
+    <EditText
+        android:id="@+id/et_buildingarea"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="34dp"
+        android:background="@drawable/custom_input"
+        android:fontFamily="@font/poppins"
+        android:hint="@string/buildingarea"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_buildingtype" />
+
+    <EditText
+        android:id="@+id/et_address"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="34dp"
+        android:background="@drawable/custom_input"
+        android:fontFamily="@font/poppins"
+        android:hint="@string/address"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_buildingarea" />
+
+    <EditText
+        android:id="@+id/et_buildingcost"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="34dp"
+        android:background="@drawable/custom_input"
+        android:fontFamily="@font/poppins"
+        android:hint="@string/buildingcost"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_address" />
+
+    <EditText
+        android:id="@+id/et_other"
+        android:layout_width="match_parent"
+        android:layout_height="156dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="34dp"
+        android:background="@drawable/custom_input"
+        android:fontFamily="@font/poppins"
+        android:gravity="start|top"
+        android:hint="@string/other"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_address" />
+
+    <Button
+        android:layout_width="221dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="34dp"
+        android:backgroundTint="@color/RegalBlue"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/addbutton"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintCircleRadius="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_other" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
