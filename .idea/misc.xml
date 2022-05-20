@@ -3,12 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ajie panca/AndroidStudioProjects/AsetDaerah_App/app/src/main/res/drawable-v24/sukes.xml" value="0.1" />
         <entry key="..\:/Users/ajie panca/AndroidStudioProjects/AsetDaerah_App/app/src/main/res/drawable/bg_btn.xml" value="0.1" />
+        <entry key="..\:/Users/ajie panca/AndroidStudioProjects/AsetDaerah_App/app/src/main/res/drawable/bg_btn_active.xml" value="0.1575" />
         <entry key="..\:/Users/ajie panca/AndroidStudioProjects/AsetDaerah_App/app/src/main/res/drawable/bgbutton.xml" value="0.1" />
         <entry key="..\:/Users/ajie panca/AndroidStudioProjects/AsetDaerah_App/app/src/main/res/drawable/bgform.xml" value="0.1" />
+        <entry key="..\:/Users/ajie panca/AndroidStudioProjects/AsetDaerah_App/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1575" />
+        <entry key="..\:/Users/ajie panca/AndroidStudioProjects/AsetDaerah_App/app/src/main/res/layout/activity_add_admin.xml" value="0.2" />
+        <entry key="..\:/Users/ajie panca/AndroidStudioProjects/AsetDaerah_App/app/src/main/res/layout/activity_admin.xml" value="0.2" />
+        <entry key="..\:/Users/ajie panca/AndroidStudioProjects/AsetDaerah_App/app/src/main/res/layout/activity_alat.xml" value="0.2604166666666667" />
         <entry key="..\:/Users/ajie panca/AndroidStudioProjects/AsetDaerah_App/app/src/main/res/layout/activity_login.xml" value="0.2" />
-        <entry key="..\:/Users/ajie panca/AndroidStudioProjects/AsetDaerah_App/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/ajie panca/AndroidStudioProjects/AsetDaerah_App/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/ajie panca/AndroidStudioProjects/AsetDaerah_App/app/src/main/res/layout/activity_register.xml" value="0.2" />
+        <entry key="..\:/Users/ajie panca/AndroidStudioProjects/AsetDaerah_App/app/src/main/res/layout/activity_splash.xml" value="0.2" />
+        <entry key="..\:/Users/ajie panca/AndroidStudioProjects/AsetDaerah_App/app/src/main/res/layout/custom_toast.xml" value="0.264" />
+        <entry key="..\:/Users/ajie panca/AndroidStudioProjects/AsetDaerah_App/app/src/main/res/layout/list_row_admin.xml" value="0.136" />
       </map>
     </option>
   </component>

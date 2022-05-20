@@ -1,4 +1,4 @@
-package com.about.asetdaerah_app
+package com.about.asetdaerah_app.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,16 +7,17 @@ import android.view.View
 import android.widget.Toast
 import com.about.asetdaerah_app.Helper.Constant
 import com.about.asetdaerah_app.Helper.PreferencesHelper
+import com.about.asetdaerah_app.R
 import com.about.asetdaerah_app.connection.ApiConfig
 import com.about.asetdaerah_app.connection.Respon.ResponLogin
-import com.about.asetdaerah_app.databinding.ActivityLoginBinding
+import kotlinx.android.synthetic.main.activity_login.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
 class LoginActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityLoginBinding
+
     lateinit var sharedpref : PreferencesHelper
     private val api by lazy { ApiConfig().endPoint }
 
@@ -25,28 +26,27 @@ class LoginActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityLoginBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        setContentView(R.layout.activity_login)
 
         sharedpref = PreferencesHelper(this )
 
 
-        binding.tvMovetoReg.setOnClickListener {
+       tv_movetoReg.setOnClickListener {
             startActivity(Intent(applicationContext, RegisterActivity::class.java))
         }
 
-        binding.btnLogin.setOnClickListener {
+        btn_login.setOnClickListener {
             checkFormlogin()
         }
     }
 
     private fun checkFormlogin() {
         when{
-            binding.etLoginNip.text.toString().length<16->{
-                binding.etLoginNip.error = "nip less than 16"
+          et_loginNip.text.toString().length<16->{
+                et_loginNip.error = "nip less than 16"
             }
-            binding.etLoginPass.text.toString().length<8 ->{
-                binding.etLoginPass.error = "password less than 8"
+         et_loginPass.text.toString().length<8 ->{
+              et_loginPass.error = "password less than 8"
             }
             else ->{
                 loginProcess()
@@ -57,8 +57,8 @@ class LoginActivity : AppCompatActivity() {
     private fun loginProcess() {
             showloading(true)
         api.loginPegawai(
-            binding.etLoginNip.text.toString(),
-            binding.etLoginPass.text.toString()
+           et_loginNip.text.toString(),
+            et_loginPass.text.toString()
         ).enqueue(object : Callback<ResponLogin>{
             override fun onResponse(call: Call<ResponLogin>, response: Response<ResponLogin>) {
                 val data =response.body()
@@ -67,7 +67,7 @@ class LoginActivity : AppCompatActivity() {
                         if (data.status == sukses){
                             showloading(false)
                             Toast.makeText(applicationContext, data.status, Toast.LENGTH_SHORT).show()
-                            saveSession(binding.etLoginNip.text.toString())
+                            saveSession(et_loginNip.text.toString())
                             startActivity(Intent(this@LoginActivity, MainActivity::class.java))
                             finish()
                         }else{
@@ -100,7 +100,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun moveToHome() {
-        startActivity(Intent(this,MainActivity::class.java))
+        startActivity(Intent(this, MainActivity::class.java))
         finish()
     }
 
@@ -113,9 +113,9 @@ class LoginActivity : AppCompatActivity() {
 
     private fun showloading(isLoading: Boolean) {
         if (isLoading) {
-            binding.loading.visibility = View.VISIBLE
+          loading.visibility = View.VISIBLE
         } else {
-            binding.loading.visibility = View.GONE
+          loading.visibility = View.GONE
         }
     }
 

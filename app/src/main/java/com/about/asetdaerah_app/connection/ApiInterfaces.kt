@@ -1,6 +1,7 @@
 package com.about.asetdaerah_app.connection
 
 import com.about.asetdaerah_app.connection.Respon.ResponLogin
+import okhttp3.MultipartBody
 import retrofit2.Call
 import retrofit2.http.*
 
@@ -20,5 +21,21 @@ interface ApiInterfaces {
         @Field("nip") nip:String,
         @Field("nama") nama:String,
         @Field("password") password:String,
-        @Field("notelp") notelp:String,): Call<ResponLogin>
+        @Field("notelp") notelp:String ): Call<ResponLogin>
+
+    @FormUrlEncoded
+    @POST("asetbangunan.php")
+    fun asetBangunan(
+        @Field("idasetbgn") idasetbgn:String,
+        @Field("namabgn") namabgn:String,
+        @Field("kondisibgn") kondisibgn:String,
+        @Field("jenisbgn") jenisbgn:String,
+        @Field("luasbgn") luasbgn:String,
+        @Field("alamatbgn") alamatbgn:String,
+        @Field("biayabgn") biayabgn:String,
+        @Field("lainyabgn") lainyabgn:String, ): Call<ResponLogin>
+
+
+
+
 }
