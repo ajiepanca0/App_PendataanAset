@@ -33,8 +33,6 @@ class RegisterActivity : AppCompatActivity() {
     var sukses : String = "sukses"
     private var getFile: File? = null
 
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
