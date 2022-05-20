@@ -1,6 +1,7 @@
 package com.about.asetdaerah_app.connection
 
 import com.about.asetdaerah_app.connection.Respon.ResponLogin
+import com.about.asetdaerah_app.connection.Respon.ResponseDataAdmin
 import okhttp3.MultipartBody
 import retrofit2.Call
 import retrofit2.http.*
@@ -35,6 +36,8 @@ interface ApiInterfaces {
         @Field("biayabgn") biayabgn:String,
         @Field("lainyabgn") lainyabgn:String, ): Call<ResponLogin>
 
+    @GET("data_admin.php")
+    fun getMoviePopular(): Call<ResponseDataAdmin>
 
 
 

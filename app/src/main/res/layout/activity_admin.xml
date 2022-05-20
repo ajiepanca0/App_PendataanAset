@@ -8,7 +8,7 @@
     android:background="#0376DF">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/listadmin"
+        android:id="@+id/rvlistadmin"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:listitem="@layout/list_row_admin"/>

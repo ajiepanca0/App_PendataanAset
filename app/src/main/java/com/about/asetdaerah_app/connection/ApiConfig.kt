@@ -7,24 +7,22 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class ApiConfig {
 
-    val endPoint: ApiInterfaces
+    companion object{
+    fun getApiService(): ApiInterfaces{
 
-        get() {
+        val loggingInterceptor =
+            HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
+        val client = OkHttpClient.Builder()
+            .addInterceptor(loggingInterceptor)
+            .build()
 
-            val interceptor = HttpLoggingInterceptor()
-            interceptor.level = HttpLoggingInterceptor.Level.BODY
-
-            val client = OkHttpClient.Builder()
-                .addInterceptor(interceptor).build()
-
-
-            val retrofit = Retrofit.Builder()
-                .baseUrl("http://192.168.43.161:8080/Project_Aset/")
-                .client(client)
-                .addConverterFactory(GsonConverterFactory.create())
-                .build()
-
-            return retrofit.create  (ApiInterfaces::class.java)
+        val retrofit = Retrofit.Builder()
+            .baseUrl("http://192.168.1.106:8080/Project_Aset/")
+            .addConverterFactory(GsonConverterFactory.create())
+            .client(client)
+            .build()
+        return retrofit.create(ApiInterfaces::class.java)
         }
+    }
 }
 

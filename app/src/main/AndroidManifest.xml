@@ -17,9 +17,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AsetDaerah_App"
         android:usesCleartextTraffic="true">
-        <activity
-            android:name=".activity.admin.AddAdminActivity"
-            android:exported="false" />
+
         <activity
             android:name=".activity.alat.AlatActivity"
             android:exported="false" />
@@ -38,7 +36,7 @@
             android:name=".activity.MainActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.SplashActivity"
+            android:name=".activity.admin.AdminActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

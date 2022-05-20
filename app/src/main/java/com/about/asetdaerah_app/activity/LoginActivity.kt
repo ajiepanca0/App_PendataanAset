@@ -19,7 +19,6 @@ class LoginActivity : AppCompatActivity() {
 
 
     lateinit var sharedpref : PreferencesHelper
-    private val api by lazy { ApiConfig().endPoint }
 
     var sukses : String = "sukses"
 
@@ -55,7 +54,7 @@ class LoginActivity : AppCompatActivity() {
 
     private fun loginProcess() {
             showloading(true)
-        api.loginPegawai(
+        ApiConfig.getApiService().loginPegawai(
            et_loginNip.text.toString(),
             et_loginPass.text.toString()
         ).enqueue(object : Callback<ResponLogin>{

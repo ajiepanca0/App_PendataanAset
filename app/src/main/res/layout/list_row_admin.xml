@@ -41,6 +41,21 @@
             card_view:layout_constraintEnd_toEndOf="parent"
             tools:text="Admin" />
 
+        <TextView
+            android:id="@+id/tv_row_admin_nip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="8dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintStart_toEndOf="@+id/img_row_admin"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            tools:text="nip"
+            android:visibility="gone"/>
+
         <Button
             android:id="@+id/btn"
             android:layout_width="45dp"
