@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AsetDaerah_App">
         <activity
+            android:name=".BuildingAsset"
+            android:exported="false" />
+        <activity
+            android:name=".AddBuildingAsset"
+            android:exported="false" />
+        <activity
             android:name=".RegisterActivity"
             android:exported="false" />
         <activity

@@ -3,6 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Life at BudiLuhur/App_PendataanAset/app/src/main/res/drawable-v24/bg_btn_fab.xml" value="0.12" />
+        <entry key="..\:/Life at BudiLuhur/App_PendataanAset/app/src/main/res/drawable-v24/bg_item_card.xml" value="0.12" />
+        <entry key="..\:/Life at BudiLuhur/App_PendataanAset/app/src/main/res/drawable/bg_btn_fab.xml" value="0.12" />
+        <entry key="..\:/Life at BudiLuhur/App_PendataanAset/app/src/main/res/drawable/bg_item_card.xml" value="0.12" />
+        <entry key="..\:/Life at BudiLuhur/App_PendataanAset/app/src/main/res/drawable/custom_input.xml" value="0.12" />
+        <entry key="..\:/Life at BudiLuhur/App_PendataanAset/app/src/main/res/drawable/ic_add_circle.xml" value="0.135" />
+        <entry key="..\:/Life at BudiLuhur/App_PendataanAset/app/src/main/res/drawable/ic_circle.xml" value="0.135" />
+        <entry key="..\:/Life at BudiLuhur/App_PendataanAset/app/src/main/res/font/poppins.xml" value="0.2222222222222222" />
+        <entry key="..\:/Life at BudiLuhur/App_PendataanAset/app/src/main/res/font/poppins_medium.xml" value="0.2222222222222222" />
+        <entry key="..\:/Life at BudiLuhur/App_PendataanAset/app/src/main/res/layout/activity_add_building_aseet.xml" value="0.22" />
+        <entry key="..\:/Life at BudiLuhur/App_PendataanAset/app/src/main/res/layout/activity_add_building_asset.xml" value="0.2" />
+        <entry key="..\:/Life at BudiLuhur/App_PendataanAset/app/src/main/res/layout/activity_building_asset.xml" value="0.22" />
+        <entry key="..\:/Life at BudiLuhur/App_PendataanAset/app/src/main/res/layout/item_building_asset.xml" value="0.67" />
+        <entry key="..\:/Life at BudiLuhur/App_PendataanAset/app/src/main/res/layout/item_menu_makanan.xml" value="0.2" />
         <entry key="..\:/Users/ajie panca/AndroidStudioProjects/AsetDaerah_App/app/src/main/res/drawable/bg_btn.xml" value="0.1" />
         <entry key="..\:/Users/ajie panca/AndroidStudioProjects/AsetDaerah_App/app/src/main/res/drawable/bgbutton.xml" value="0.1" />
         <entry key="..\:/Users/ajie panca/AndroidStudioProjects/AsetDaerah_App/app/src/main/res/drawable/bgform.xml" value="0.1" />

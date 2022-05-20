@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">AsetDaerah_App</string>
     <string name="masukan_username">Masukan Username</string>
+    <string name="buildingname">Masukkan nama bangunan</string>
+    <string name="buildingcondition">Masukkan kondisi bangunan</string>
+    <string name="buildingtype">Masukkan jenis bangunan</string>
+    <string name="buildingarea">Masukkan luas bangunan</string>
+    <string name="address">Masukkan alamat</string>
+    <string name="buildingcost">Masukkan biaya bangunan</string>
+    <string name="other">Masukkan lainnya</string>
+    <string name="addbutton">Tambah</string>
 </resources>

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/silentBlue"
     tools:context=".BuildingAsset">
 
     <androidx.recyclerview.widget.RecyclerView
@@ -16,12 +17,13 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:listitem="@layout/item_building_asset" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="68dp"
+        android:layout_height="68dp"
         android:layout_marginTop="70dp"
         android:layout_marginEnd="36dp"
-        android:background="@drawable/bg_btn_fab"
+        android:background="@drawable/ic_plus"
+        android:gravity="center_vertical|center_horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rv_item_building_asset" />
 
