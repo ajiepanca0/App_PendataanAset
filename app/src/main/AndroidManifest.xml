@@ -17,21 +17,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AsetDaerah_App"
         android:usesCleartextTraffic="true">
-
+        <activity
+            android:name=".activity.alat.AddAsetAlatActivity"
+            android:exported="false" />
         <activity
             android:name=".activity.alat.AlatActivity"
             android:exported="false" />
         <activity
             android:name=".activity.bangunan.BangunanActivity"
             android:exported="false" />
-
         <activity
             android:name=".activity.LoginActivity"
             android:exported="false" />
         <activity
             android:name=".activity.RegisterActivity"
             android:exported="false" />
-
         <activity
             android:name=".activity.MainActivity"
             android:exported="false" />

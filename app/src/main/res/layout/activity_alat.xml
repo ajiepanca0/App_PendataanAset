@@ -4,6 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.alat.AlatActivity">
+    tools:context=".activity.alat.AlatActivity"
+    android:background="#0376DF">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvlistalat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/list_row_alat"/>
+
+
+    <Button
+        android:id="@+id/btn_add_alat"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="20dp"
+        android:background="@drawable/bgplus"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

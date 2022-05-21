@@ -12,12 +12,14 @@
         <entry key="..\:/Users/ajie panca/AndroidStudioProjects/AsetDaerah_App/app/src/main/res/layout/activity_add_admin.xml" value="0.2" />
         <entry key="..\:/Users/ajie panca/AndroidStudioProjects/AsetDaerah_App/app/src/main/res/layout/activity_admin.xml" value="0.2" />
         <entry key="..\:/Users/ajie panca/AndroidStudioProjects/AsetDaerah_App/app/src/main/res/layout/activity_alat.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/ajie panca/AndroidStudioProjects/AsetDaerah_App/app/src/main/res/layout/activity_bangunan.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/ajie panca/AndroidStudioProjects/AsetDaerah_App/app/src/main/res/layout/activity_login.xml" value="0.2" />
         <entry key="..\:/Users/ajie panca/AndroidStudioProjects/AsetDaerah_App/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/ajie panca/AndroidStudioProjects/AsetDaerah_App/app/src/main/res/layout/activity_register.xml" value="0.2" />
         <entry key="..\:/Users/ajie panca/AndroidStudioProjects/AsetDaerah_App/app/src/main/res/layout/activity_splash.xml" value="0.2" />
         <entry key="..\:/Users/ajie panca/AndroidStudioProjects/AsetDaerah_App/app/src/main/res/layout/custom_toast.xml" value="0.264" />
         <entry key="..\:/Users/ajie panca/AndroidStudioProjects/AsetDaerah_App/app/src/main/res/layout/list_row_admin.xml" value="0.264" />
+        <entry key="..\:/Users/ajie panca/AndroidStudioProjects/AsetDaerah_App/app/src/main/res/layout/list_row_alat.xml" value="0.4" />
       </map>
     </option>
   </component>

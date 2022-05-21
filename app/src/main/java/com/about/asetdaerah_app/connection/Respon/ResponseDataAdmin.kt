@@ -5,10 +5,10 @@ import com.google.gson.annotations.SerializedName
 data class ResponseDataAdmin(
 
 	@field:SerializedName("hasil")
-	val hasil: List<HasilItem>
+	val hasil: List<HasilItemAdmin>
 )
 
-data class HasilItem(
+data class HasilItemAdmin(
 
 	@field:SerializedName("notelp")
 	val notelp: String,

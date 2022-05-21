@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.about.asetdaerah_app.R
 import com.about.asetdaerah_app.activity.RegisterActivity
 import com.about.asetdaerah_app.connection.ApiConfig
-import com.about.asetdaerah_app.connection.Respon.HasilItem
+import com.about.asetdaerah_app.connection.Respon.HasilItemAdmin
 import com.about.asetdaerah_app.connection.Respon.ResponseDataAdmin
 import kotlinx.android.synthetic.main.activity_admin.*
 import retrofit2.Call
@@ -34,7 +34,7 @@ class AdminActivity : AppCompatActivity() {
     }
 
     private fun getdataAdmin() {
-        val dataAdmin = ApiConfig.getApiService().getMoviePopular()
+        val dataAdmin = ApiConfig.getApiService().getDataAdmin()
         dataAdmin.enqueue(object : Callback<ResponseDataAdmin>{
             override fun onResponse(
                 call: Call<ResponseDataAdmin>,
@@ -55,7 +55,7 @@ class AdminActivity : AppCompatActivity() {
         })
     }
 
-    private fun setdataAdmin(hasil: List<HasilItem>) {
+    private fun setdataAdmin(hasil: List<HasilItemAdmin>) {
 
         for ( data in hasil) {
 
