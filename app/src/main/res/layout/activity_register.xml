@@ -8,8 +8,6 @@
     android:background="#0376DF">
 
 
-
-
     <TextView
         android:id="@+id/tv_masuk"
         android:layout_width="wrap_content"

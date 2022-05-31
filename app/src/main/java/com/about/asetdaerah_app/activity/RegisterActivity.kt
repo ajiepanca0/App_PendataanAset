@@ -29,7 +29,6 @@ import java.io.File
 class RegisterActivity : AppCompatActivity() {
 
 
-    private val api by lazy { ApiConfig().endPoint }
     var sukses : String = "sukses"
     private var getFile: File? = null
 
@@ -98,7 +97,7 @@ class RegisterActivity : AppCompatActivity() {
         )
 
         showloading(true)
-        api.registerPegawai(
+        ApiConfig.getApiService().registerPegawai(
             et_regnip.text.toString(),
             et_regNamalengkap.text.toString(),
             et_regPass.text.toString(),

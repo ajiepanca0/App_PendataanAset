@@ -14,21 +14,25 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="8dp">
+        android:layout_gravity="center">
 
-        <ImageView
-            android:id="@+id/img_row_admin"
-            android:layout_width="34dp"
-            android:layout_height="34dp"
-            android:layout_marginStart="8dp"
+
+        <TextView
+            android:id="@+id/tv_row_namaalat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="8dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            card_view:layout_constraintTop_toTopOf="parent"
             card_view:layout_constraintBottom_toBottomOf="parent"
             card_view:layout_constraintStart_toStartOf="parent"
-            card_view:layout_constraintTop_toTopOf="parent"
-            tools:src="@drawable/user" />
-
+            card_view:layout_constraintEnd_toStartOf="@+id/img_arrow"
+            tools:text="NamaAlat" />
 
         <TextView
-            android:id="@+id/tv_row_admin"
+            android:id="@+id/tv_row_idalat"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
@@ -37,43 +41,21 @@
             android:textStyle="bold"
             card_view:layout_constraintTop_toTopOf="parent"
             card_view:layout_constraintBottom_toBottomOf="parent"
-            card_view:layout_constraintStart_toEndOf="@+id/img_row_admin"
+            card_view:layout_constraintEnd_toStartOf="@+id/img_arrow"
             card_view:layout_constraintEnd_toEndOf="parent"
-            tools:text="Admin" />
-
-        <TextView
-            android:id="@+id/tv_row_admin_nip"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:layout_marginEnd="8dp"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            card_view:layout_constraintTop_toTopOf="parent"
-            card_view:layout_constraintBottom_toBottomOf="parent"
-            card_view:layout_constraintStart_toEndOf="@+id/img_row_admin"
-            card_view:layout_constraintEnd_toEndOf="parent"
-            tools:text="nip"
+            tools:text="idalat"
             android:visibility="gone"/>
 
-        <Button
-            android:id="@+id/btn"
-            android:layout_width="45dp"
-            android:layout_height="24dp"
-            android:layout_marginStart="139dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            card_view:layout_constraintTop_toTopOf="parent"
-            card_view:layout_constraintBottom_toBottomOf="parent"
+
+        <ImageView
+            android:id="@+id/img_arrow"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/img_cek"
             card_view:layout_constraintEnd_toEndOf="parent"
-            android:background="@drawable/bg_btn_active"
-            android:textSize="8sp"
-            android:textColor="@color/white"
-            android:text="Admin"
-            android:textAlignment="center"/>
-
-
+            android:layout_marginRight="15dp"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:layout_constraintBottom_toBottomOf="parent"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>
